@@ -16,4 +16,4 @@
 
 
 ## 📬 Let's Connect
-- [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/Malakbadawyy)
+- [LinkedIn](https://www.linkedin.com/in/malak-badawy-200293205/) | [GitHub](https://github.com/Malakbadawyy)
