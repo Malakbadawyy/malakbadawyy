@@ -10,6 +10,7 @@
 - Tools: ![VS Code](https://img.shields.io/badge/-VS%20Code-blue) ![Git](https://img.shields.io/badge/-Git-red)
 
 ## 🌟 Featured Projects
+- [Virtual Pharmacy](https://github.com/advanced-computer-lab-2023/Ctrl-Alt-Defeat-Pharmacy)
 - [Virtual Clinic](https://github.com/advanced-computer-lab-2023/Ctrl-Alt-Defeat-Clinic)
 - [Marvel Game](https://github.com/Malakbadawyy/Marvel-Game)
 - [Wordle in Prolog](https://github.com/Malakbadawyy/Wordle)
