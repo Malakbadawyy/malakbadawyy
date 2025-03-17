@@ -6,7 +6,7 @@
 
 ## ⚡ Technologies
 - Programming: ![Java](https://img.shields.io/badge/-Java-orange) ![Python](https://img.shields.io/badge/-Python-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
-- Frameworks: ![React](https://img.shields.io/badge/-React-blue) ![Angular](https://img.shields.io/badge/-Angular-red)  ![TensorFlow](https://img.shields.io/badge/-TensorFlow-orange) 
+- Frameworks: ![React](https://img.shields.io/badge/-React-blue) ![Angular](https://img.shields.io/badge/-Angular-red) ![Angular](https://img.shields.io/badge/-Vue-purple) 
 - Tools: ![VS Code](https://img.shields.io/badge/-VS%20Code-blue) ![Git](https://img.shields.io/badge/-Git-red)
 
 ## 🌟 Featured Projects
