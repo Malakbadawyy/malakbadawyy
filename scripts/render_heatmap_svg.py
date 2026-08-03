@@ -38,8 +38,8 @@ TEXT_BRIGHT = "#c9d1d9"
 ACCENT = "#db61a2"
 
 # Reveal timing
-DIAG_STEP = 0.022      # seconds added per diagonal band
-FALL_DUR = 0.42        # how long one box takes to settle
+DIAG_STEP = 0.05       # seconds added per diagonal band
+FALL_DUR = 0.9         # how long one box takes to settle
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
