@@ -41,6 +41,7 @@ ACCENT = "#db61a2"
 DIAG_STEP = 0.05       # seconds added per diagonal band
 FALL_DUR = 0.9         # how long one box takes to settle
 CYCLE = 8.0            # seconds per loop: slide in, hold visible, sweep again
+START_DELAY = 3.0      # blank pause after load before the first sweep
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -156,7 +157,7 @@ def build_svg(payload: dict, bg: str) -> str:
         x = PAD_L + col * STEP
         y = PAD_T + row * STEP
         fill = PALETTE[entry["level"]]
-        delay = round((col + row) * DIAG_STEP, 3)
+        delay = round(START_DELAY + (col + row) * DIAG_STEP, 3)
         count = entry["count"]
         noun = "contribution" if count == 1 else "contributions"
         title = f"{count} {noun} on {pretty_date(entry['date'])}"
@@ -173,7 +174,7 @@ def build_svg(payload: dict, bg: str) -> str:
     swatch = 11
     legend_w = 30 + len(PALETTE) * (swatch + 3) + 32
     legend_x = PAD_L + grid_w - legend_w
-    total_delay = round((n_cols + 7) * DIAG_STEP + FALL_DUR, 3)
+    total_delay = round(START_DELAY + (n_cols + 7) * DIAG_STEP + FALL_DUR, 3)
 
     parts.append(
         f'<text x="{legend_x}" y="{legend_y + swatch - 2}" text-anchor="start">Less</text>'
