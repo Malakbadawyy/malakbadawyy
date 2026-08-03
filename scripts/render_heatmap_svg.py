@@ -3,7 +3,8 @@
 render_heatmap_svg.py — draw data/contributions.json as an animated SVG heatmap.
 
 Classic 53-week x 7-day calendar of rounded boxes, revealed once with a
-diagonal slide-down cascade that freezes when it finishes (no looping glow).
+diagonal cascade — each box slides in from the upper-left along the wave —
+that freezes when it finishes (no looping glow).
 Includes a Less->More legend and a stats footer.
 
 Usage:
@@ -37,7 +38,7 @@ TEXT_BRIGHT = "#c9d1d9"
 ACCENT = "#db61a2"
 
 # Reveal timing
-DIAG_STEP = 0.012      # seconds added per diagonal band
+DIAG_STEP = 0.022      # seconds added per diagonal band
 FALL_DUR = 0.42        # how long one box takes to settle
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -113,8 +114,8 @@ def build_svg(payload: dict, bg: str) -> str:
     animation: drop {FALL_DUR}s cubic-bezier(.22,.9,.3,1) forwards;
   }}
   @keyframes drop {{
-    from {{ opacity: 0; transform: translateY(-9px) scale(.72); }}
-    to   {{ opacity: 1; transform: translateY(0) scale(1); }}
+    from {{ opacity: 0; transform: translate(-13px, -13px) scale(.72); }}
+    to   {{ opacity: 1; transform: translate(0, 0) scale(1); }}
   }}
   text {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
