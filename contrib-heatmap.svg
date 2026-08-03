@@ -2,11 +2,12 @@
 <style>
   .cell {
     opacity: 0;
-    animation: drop 0.9s cubic-bezier(.22,.9,.3,1) forwards;
+    animation: drop 8.0s cubic-bezier(.22,.9,.3,1) infinite;
   }
   @keyframes drop {
-    from { opacity: 0; transform: translate(-13px, -13px) scale(.72); }
-    to   { opacity: 1; transform: translate(0, 0) scale(1); }
+    0% { opacity: 0; transform: translate(-13px, -13px) scale(.72); }
+    11.25% { opacity: 1; transform: translate(0, 0) scale(1); }
+    100% { opacity: 1; transform: translate(0, 0) scale(1); }
   }
   text {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;

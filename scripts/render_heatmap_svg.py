@@ -2,9 +2,9 @@
 """
 render_heatmap_svg.py — draw data/contributions.json as an animated SVG heatmap.
 
-Classic 53-week x 7-day calendar of rounded boxes, revealed once with a
-diagonal cascade — each box slides in from the upper-left along the wave —
-that freezes when it finishes (no looping glow).
+Classic 53-week x 7-day calendar of rounded boxes, revealed with a diagonal
+cascade — each box slides in from the upper-left along the wave. The wave
+re-sweeps on a slow loop so the motion is visible whenever you look.
 Includes a Less->More legend and a stats footer.
 
 Usage:
@@ -40,6 +40,7 @@ ACCENT = "#db61a2"
 # Reveal timing
 DIAG_STEP = 0.05       # seconds added per diagonal band
 FALL_DUR = 0.9         # how long one box takes to settle
+CYCLE = 8.0            # seconds per loop: slide in, hold visible, sweep again
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -108,14 +109,19 @@ def build_svg(payload: dict, bg: str) -> str:
     )
 
     # --- styles: one cascade animation, plays once, then holds ---------------
+    # Each cell keeps its diagonal stagger via animation-delay; the infinite
+    # cycle preserves that phase shift, so the disappear/re-slide travels the
+    # grid as a wave instead of blinking all at once.
+    slide_pct = round(FALL_DUR / CYCLE * 100, 2)
     parts.append(f"""<style>
   .cell {{
     opacity: 0;
-    animation: drop {FALL_DUR}s cubic-bezier(.22,.9,.3,1) forwards;
+    animation: drop {CYCLE}s cubic-bezier(.22,.9,.3,1) infinite;
   }}
   @keyframes drop {{
-    from {{ opacity: 0; transform: translate(-13px, -13px) scale(.72); }}
-    to   {{ opacity: 1; transform: translate(0, 0) scale(1); }}
+    0% {{ opacity: 0; transform: translate(-13px, -13px) scale(.72); }}
+    {slide_pct}% {{ opacity: 1; transform: translate(0, 0) scale(1); }}
+    100% {{ opacity: 1; transform: translate(0, 0) scale(1); }}
   }}
   text {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
