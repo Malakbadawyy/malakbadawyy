@@ -6,18 +6,18 @@
     "to": "2026-08-05"
   },
   "stats": {
-    "total": 455,
-    "active_days": 73,
+    "total": 462,
+    "active_days": 74,
     "total_days": 368,
     "busiest_day": {
       "date": "2026-01-26",
       "count": 27
     },
-    "daily_average": 1.24,
+    "daily_average": 1.26,
     "current_streak": {
-      "length": 3,
+      "length": 4,
       "start": "2026-08-02",
-      "end": "2026-08-04"
+      "end": "2026-08-05"
     },
     "longest_streak": {
       "length": 8,
@@ -37,7 +37,7 @@
       "2026-05": 135,
       "2026-06": 90,
       "2026-07": 78,
-      "2026-08": 18
+      "2026-08": 25
     }
   },
   "days": [
@@ -1653,7 +1653,7 @@
       "date": "2026-04-28",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-04-29",
@@ -1803,7 +1803,7 @@
       "date": "2026-05-23",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-05-24",
@@ -1827,7 +1827,7 @@
       "date": "2026-05-27",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-05-28",
@@ -1857,13 +1857,13 @@
       "date": "2026-06-01",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-06-02",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-06-03",
@@ -2229,7 +2229,7 @@
       "date": "2026-08-02",
       "count": 5,
       "gh_level": 1,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-08-03",
@@ -2239,15 +2239,15 @@
     },
     {
       "date": "2026-08-04",
-      "count": 12,
+      "count": 13,
       "gh_level": 3,
       "level": 4
     },
     {
       "date": "2026-08-05",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
+      "count": 6,
+      "gh_level": 2,
+      "level": 3
     }
   ]
 }
