@@ -30,7 +30,7 @@
 <g class="row" style="animation-delay:0.25s">
 <rect x="20" y="71" width="9" height="9" rx="2" fill="#db61a2"/>
 <text x="38" y="80">Active Days</text>
-<text class="num" x="310" y="80" text-anchor="end">75 / 369</text>
+<text class="num" x="310" y="80" text-anchor="end">75 / 370</text>
 </g>
 <g class="row" style="animation-delay:0.35s">
 <rect x="20" y="95" width="9" height="9" rx="2" fill="#a92964"/>
