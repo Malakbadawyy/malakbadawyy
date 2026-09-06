@@ -1,19 +1,19 @@
 {
   "username": "Malakbadawyy",
-  "generated_at": "2026-09-05",
+  "generated_at": "2026-09-06",
   "range": {
-    "from": "2025-08-31",
-    "to": "2026-09-05"
+    "from": "2025-09-07",
+    "to": "2026-09-06"
   },
   "stats": {
     "total": 505,
-    "active_days": 86,
-    "total_days": 371,
+    "active_days": 85,
+    "total_days": 365,
     "busiest_day": {
       "date": "2026-01-26",
       "count": 27
     },
-    "daily_average": 1.36,
+    "daily_average": 1.38,
     "current_streak": {
       "length": 4,
       "start": "2026-09-02",
@@ -25,8 +25,7 @@
       "end": "2026-05-29"
     },
     "monthly_totals": {
-      "2025-08": 0,
-      "2025-09": 1,
+      "2025-09": 0,
       "2025-10": 2,
       "2025-11": 0,
       "2025-12": 0,
@@ -42,48 +41,6 @@
     }
   },
   "days": [
-    {
-      "date": "2025-08-31",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-01",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-02",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-03",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-04",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-05",
-      "count": 1,
-      "gh_level": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-09-06",
-      "count": 0,
-      "gh_level": 0,
-      "level": 0
-    },
     {
       "date": "2025-09-07",
       "count": 0,
@@ -2267,6 +2224,12 @@
       "count": 1,
       "gh_level": 1,
       "level": 1
+    },
+    {
+      "date": "2026-09-06",
+      "count": 0,
+      "gh_level": 0,
+      "level": 0
     }
   ]
 }
